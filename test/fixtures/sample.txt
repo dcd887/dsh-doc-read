@@ -1,0 +1,3 @@
+dsh-doc-read self-test fixture (txt)
+Keyword for doc_grep: fixture-delta.
+Plain text is the baseline format: outline treats it as one block.

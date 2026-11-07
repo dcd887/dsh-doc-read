@@ -1,0 +1,1 @@
+{ "title": "Doc Reader", "description": "Token-efficient document reader: outline first, then read a page range or grep only the matching lines (pdf/docx/xlsx/txt)" }

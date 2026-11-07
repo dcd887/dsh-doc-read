@@ -1,0 +1,59 @@
+﻿{
+  "name": "dsh-doc-read",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Token-efficient document reader for DeepSeek Harness: outline / ranged read / grep for PDF, DOCX, XLSX and TXT, so an agent never loads a whole document to answer one question.",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "test/"
+  ],
+  "icon": "./icon.svg",
+  "meta": {
+    "title": "文档读",
+    "description": "省 token 的文档读取：先看目录摘要，再按页读，或按关键词只取命中处（pdf/docx/xlsx/txt）"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "document",
+    "pdf",
+    "docx",
+    "xlsx",
+    "context-engineering",
+    "token-saving"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dcd887/dsh-doc-read.git"
+  },
+  "homepage": "https://github.com/dcd887/dsh-doc-read#readme",
+  "bugs": {
+    "url": "https://github.com/dcd887/dsh-doc-read/issues"
+  },
+  "scripts": {
+    "test": "node selftest.mjs"
+  },
+  "dependencies": {
+    "@deepseek-ai/schemastery": "^3.18.5",
+    "pdfjs-dist": "^4.10.38"
+  }
+}
