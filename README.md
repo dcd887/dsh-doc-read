@@ -21,7 +21,7 @@
 在 dsh profile 目录里：
 
 ```bash
-pnpm add dsh-doc-read
+dsh plugin add github:dcd887/dsh-doc-read
 ```
 
 然后在 `cordis.patch.yml` 里启用它（插件自带 `cordis.patch.yml`，`:plugin` 名与本包一致）。依赖 `pdfjs-dist` 由 pnpm 自动装。
